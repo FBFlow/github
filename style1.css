@@ -1,0 +1,184 @@
+
+.fa-brands.fa-whatsapp.fa-4x{
+    color:rgb(74, 218, 74);
+    
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .fa-solid.fa-bars{
+    font-size: 30px;
+    padding:25px;
+    position: absolute;
+    left: 0;
+  }
+  .fa-solid.fa-magnifying-glass{
+    font-size: 25px;
+    padding: 25px;
+    position: absolute;
+    right: 0;
+    
+  }
+  
+  .head {
+    position: relative;
+    background-color: hsl(350, 79%, 83%); 
+    display: flex; /* Add flexbox to the .head container */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; 
+  padding: 12px 17px;
+    }
+    .head img {
+        max-height:65px; 
+        max-width: fit-content;
+        font-size: 40px;
+        
+        
+    }
+    
+   
+header{
+    background-color: hsl(0, 0%, 100%); 
+    top:0px;
+    padding: 1px;
+    margin:0%;
+    text-align: center;
+    font-size:18px;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+header:hover{
+    background-color: hsl(350, 79%, 97%); 
+  
+  }
+header p{
+  color: rgb(0, 0, 0);
+}
+
+.cointainer {
+    background-color: hsl(350, 79%, 89%);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+    height: auto;
+}
+.item {
+    display: flex;
+    align-items: center;
+    height: 472px;
+    width: 472px;
+   background-color: white;
+   border-radius: 50px;
+}
+
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-image {
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    padding-left: 15px;
+    border-radius: 50px;
+
+}.quantity label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.quantity input {
+    width: 100px;
+    font-size: 25px;
+    padding: 4px;
+    font-family: 'Merriweather', serif;
+}
+
+    .quantity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px; /* Adjust the margin as needed */
+        margin-left: 20px;
+    }
+    
+    #price {
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Roboto Slab', serif;
+        font-family: 'Merriweather', serif;
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        text-align: center; /* Center the content inside the box */
+        border-color: black
+       
+    }
+
+
+
+
+
+
+
+
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    background-color:  hsl(350, 79%, 92%);
+  }
+  
+  .FBF {
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+    font-size: larger;
+  }
+  
+  .tel {
+    font-size: larger;
+    padding-right: 20px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .cash-on-delivery {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Apply styles for mobile devices with a maximum width of 768px */
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 16px; /* Example: Adjust font size for better readability on small screens */
+    }
+  
+    .main-container {
+      padding: 20px; /* Example: Add padding to the main container for better spacing */
+    }
+  
+    .mobile-nav {
+      display: block; /* Example: Show a mobile navigation menu for small screens */
+    }
+  
+    .desktop-nav {
+      display: none; /* Example: Hide the desktop navigation menu on small screens */
+    }
+  }
+  
