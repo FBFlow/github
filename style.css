@@ -81,6 +81,8 @@ background-color:  hsl(350, 79%, 89%);
 display: flex;
 flex-wrap: wrap;
 align-content: flex-start;
+justify-content: space-between;
+
 
 }
 .item{
