@@ -1,3 +1,11 @@
+:root {
+  --snow-drift: #F7F9F8;
+  --harvest-gold: #E0B973;
+  --turkish-rose: #BD7B93;
+  --copperfield: #E18C74;
+  --storm-gray: #6A6D8C;
+}
+
 
 .fa-brands.fa-whatsapp.fa-4x{
     color:rgb(74, 218, 74);
@@ -24,7 +32,7 @@
   
   .head {
     position: relative;
-    background-color: hsl(350, 79%, 83%); 
+    background-color: var(--turkish-rose);
     display: flex; /* Add flexbox to the .head container */
   justify-content: center; /* Center the items horizontally */
   align-items: center; 
@@ -40,7 +48,7 @@
     
    
 header{
-    background-color: hsl(0, 0%, 100%); 
+  background-color: var(--snow-drift);
     top:0px;
     padding: 1px;
     margin:0%;
@@ -51,7 +59,7 @@ header{
 }
 
 header:hover{
-    background-color: hsl(350, 79%, 97%); 
+  background-color: hsl(305, 61%, 92%);
   
   }
 header p{
@@ -59,7 +67,7 @@ header p{
 }
 
 .cointainer {
-    background-color: hsl(0, 0%, 100%);
+  background-color: var(--snow-drift);
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -71,7 +79,7 @@ header p{
     align-items: center;
     height: 472px;
     width: 472px;
-   background-color: #94d3f0;
+    background-color: var(--turkish-rose);
    border-radius: 50px;
 }
 
@@ -114,7 +122,7 @@ header p{
         font-size: 24px;
         font-family: 'Roboto Slab', serif;
         font-family: 'Merriweather', serif;
-        background-color:#94d3f0;
+        background-color: var(--turkish-rose);
         
         padding: 10px;
         border-radius: 40px;
@@ -137,7 +145,7 @@ header p{
     justify-content: space-between;
     align-items: center;
     height: 66px;
-    background-color:  hsl(350, 79%, 92%);
+    background-color: var(--storm-gray);
   }
   
   .FBF {
