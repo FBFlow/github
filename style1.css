@@ -68,19 +68,18 @@ header p{
 
 .cointainer {
   background-color: var(--snow-drift);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    padding: 20px;
-    height: auto;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  height: auto;
 }
 .item {
     display: flex;
     align-items: center;
     height: 472px;
-    width: 472px;
+    width: 50%; /* Set the width of the item box to 50% */
     background-color: var(--turkish-rose);
-   border-radius: 50px;
+    border-radius: 50px;
 }
 
 
@@ -90,13 +89,14 @@ header p{
 }
 
 .item-image {
-    height: 400px;
-    width: 400px;
-    margin: 20px;
-    padding-left: 15px;
-    border-radius: 50px;
+ height: 400px;
+  width: 400px;
+  margin-left: 80px;
+  border-radius: 50px;
+  text-align: center;
+}
 
-}.quantity label {
+.quantity label {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Merriweather', serif;
@@ -113,7 +113,7 @@ header p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 120px; /* Adjust the margin as needed */
+        margin-top: 50px; /* Adjust the margin as needed */
         margin-left: 20px;
     }
     
@@ -131,6 +131,52 @@ header p{
         color: white;
        
     }
+    .item-content {
+      display: flex;
+      align-items: flex-start; /* Align items to the top */
+      justify-content: space-between; /* Distribute items horizontally */
+      width: 50%;
+      float: left;
+  }
+  .hat-details {
+      flex: 1; /* Take available space (right half of the container) */
+      max-width: 50%; /* Set the maximum width of the hat details to 50% */
+      margin-left: 20px; /* Add some spacing between the item and hat details */
+  }
+  
+  
+  .hat-details {
+      flex: 1; /* Take available space (right half of the container) */
+      max-width: 60%; /* Set the maximum width to 60% of the container */
+    margin-right: 20px;
+  }
+  
+.hat-name {
+  flex: 1; /* Take available space (right half of the container) */
+  display: flex; /* Use flexbox to center the image */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  color: var(--storm-gray);
+ 
+}
+
+.description {
+  font-size: 16px;
+  color: var(--storm-gray);
+  text-align: left; /* Align description to the left */
+  font-family: 'Roboto Slab', serif;
+  margin-top: 10px;
+  font-size: large;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
