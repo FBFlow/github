@@ -1,9 +1,9 @@
 :root {
-  --snow-drift: #F7F9F8;
-  --harvest-gold: #E0B973;
-  --turkish-rose: #BD7B93;
-  --copperfield: #E18C74;
-  --storm-gray: #6A6D8C;
+  --snow-drift: #F3F1ED;
+  --harvest-gold: #C4A0A4;
+  --turkish-rose: #BD2E56;
+  --copperfield: #2BB3E4;
+  --storm-gray: #1A1D1D;
 }
 
 
@@ -61,7 +61,7 @@ header p{
   color: rgb(0, 0, 0);
 }
 header:hover{
-  background-color: hsl(305, 61%, 92%); 
+  background-color: var(--turkish-rose);
 
 }
 h1{
@@ -156,7 +156,7 @@ main p {
   color: var(--turkish-rose);
   padding: 4px 25px;
   border-radius: 20px;
-  border: 2px solid var(--copperfield);
+  border: 2px solid black;
 }
 .choose-option-btn p{
   font-size: 18px;
@@ -164,7 +164,7 @@ main p {
 
 .choose-option-btn:hover {
  
-  border: 4px solid var(--copperfield);
+  border: 4px solid black;
 }
 
 
@@ -242,6 +242,7 @@ input[type="submit"]:hover {
   align-items: center;
   height: 66px;
   background-color: var(--storm-gray);
+  color: white;
 }
 
 .FBF {
