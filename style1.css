@@ -1,9 +1,9 @@
 :root {
-  --snow-drift: #F7F9F8;
-  --harvest-gold: #E0B973;
-  --turkish-rose: #BD7B93;
-  --copperfield: #E18C74;
-  --storm-gray: #6A6D8C;
+  --snow-drift: #F3F1ED;
+  --harvest-gold: #C4A0A4;
+  --turkish-rose: #BD2E56;
+  --copperfield: #2BB3E4;
+  --storm-gray: #1A1D1D;
 }
 
 
@@ -59,7 +59,7 @@ header{
 }
 
 header:hover{
-  background-color: hsl(305, 61%, 92%);
+  background-color: var(--turkish-rose);
   
   }
 header p{
@@ -146,6 +146,7 @@ header p{
     align-items: center;
     height: 66px;
     background-color: var(--storm-gray);
+    color: white;
   }
   
   .FBF {
