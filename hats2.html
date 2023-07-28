@@ -39,8 +39,8 @@
                    🌈🍂🌿 Step into the magic today!</p>
             <div class="quantity">
                 <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" onchange="updatePrice()">
-                <div id="price">Price: 20$</div> <!-- Move the #price below the quantity -->
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="50" onchange="updatePrice()">
+                <div id="price">Price: 6.49$</div> <!-- Move the #price below the quantity -->
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
         function updatePrice() {
             const quantityInput = document.getElementById('quantity');
             const priceElement = document.getElementById('price');
-            const pricePerHat = 20; // The price of one hat
+            const pricePerHat = 6.49; // The price of one hat
             const quantity = parseInt(quantityInput.value);
             const totalPrice = pricePerHat * quantity;
             priceElement.textContent = 'Price: ' + totalPrice + '$';
