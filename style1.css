@@ -91,8 +91,11 @@ header p{
 .item-image {
  height: 400px;
   width: 400px;
-  margin-left: 80px;
+  margin: auto;
   border-radius: 50px;
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
   text-align: center;
 }
 
@@ -222,11 +225,9 @@ header p{
   
   /* Apply styles for mobile devices with a maximum width of 768px */
   @media only screen and (max-width: 768px) {
-
-    .item-image {
-      margin-left: 0; /* Reset the margin-left */
-      margin-right: auto; /* Align the image to the left by setting margin-right to auto */
-    }
+    
+    
+   
     body {
       font-size: 16px; /* Example: Adjust font size for better readability on small screens */
     }
