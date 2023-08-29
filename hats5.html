@@ -25,7 +25,13 @@
     <div class="cointainer">
         <div class="item" id="box1">
             <div class="item-image">
-                <img src="blackhat.jpg" alt="Image" class="item-image">
+                
+                <div class="image-container">
+                    <img src="x.JPG" alt="Image 1" class="item-image">
+                    
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                  </div>
             </div>
         </div>
         <div class="hat-details">
@@ -55,6 +61,20 @@
             const quantity = parseInt(quantityInput.value);
             const totalPrice = pricePerHat * quantity;
             priceElement.textContent = 'Price: ' + totalPrice + '$';
+        }
+        
+        let currentImageIndex = 0;
+        const images = ['x.JPG'];
+
+        function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1;
+        } else if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+        }
+        const imageContainer = document.querySelector('.image-container img');
+        imageContainer.src = images[currentImageIndex];
         }
     </script>
 </body>
