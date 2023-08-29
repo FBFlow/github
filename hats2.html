@@ -25,22 +25,27 @@
     <div class="cointainer">
         <div class="item" id="box1">
             <div class="item-image">
-                <img src="magicmushroom.jpg" alt="Image" class="item-image">
+                
+                <div class="image-container">
+                    <img src="q.JPG" alt="Image 1" class="item-image">
+                    
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                  </div>
             </div>
         </div>
         <div class="hat-details">
-            <h1 class="hat-name">Magic Mushroom Bucket hat🍄</h1>
-            <p class="description"><strong>Unleash Your Imagination with the "Magic Mushroom" Bucket Hat! 🍄</strong><br>
+            <h1 class="hat-name">Badass bucket hat💪🖤</h1>
+            <p class="description"><strong>🖤 Embrace Your Inner Strength 🖤</strong><br>
+                Our "Badass Bucket Hat" is crafted with 100% cotton, offering comfort that matches its bold style. Made for those who fearlessly face life's challenges, this hat inspires you to be unapologetically yourself. 💪🔥 Whether you're conquering the streets or chasing your dreams, wear it with pride and let your confidence shine through!
                 
+                With its premium cotton fabric, this bucket hat ensures a cozy fit while making a powerful statement. It's not just an accessory; it's a symbol of empowerment and self-expression.
                 
-                Made with love from premium cotton, our "Magic Mushroom" hat features a captivating mushroom design,
-                 allowing you to let your imagination run wild. Vibrant colors and intricate patterns make each hat a unique masterpiece.
-                  Embrace the enchantment, wear your uniqueness with pride, and let your imagination run wild with every step!
-                   🌈🍂🌿 Step into the magic today!</p>
+                Join the league of trailblazers and own your journey with the "Badass Bucket Hat"!</p>
             <div class="quantity">
                 <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="50" onchange="updatePrice()">
-                <div id="price">Price: 6.99$</div> <!-- Move the #price below the quantity -->
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" onchange="updatePrice()">
+                <div id="price">Price: 9.99$</div> <!-- Move the #price below the quantity -->
             </div>
         </div>
     </div>
@@ -54,10 +59,24 @@
         function updatePrice() {
             const quantityInput = document.getElementById('quantity');
             const priceElement = document.getElementById('price');
-            const pricePerHat = 6.99; // The price of one hat
+            const pricePerHat = 9.99; // The price of one hat
             const quantity = parseInt(quantityInput.value);
             const totalPrice = pricePerHat * quantity;
             priceElement.textContent = 'Price: ' + totalPrice + '$';
+        }
+
+        let currentImageIndex = 0;
+        const images = ['q.JPG', 'a.JPG', 'z.JPG','w.JPG','d.JPG','s.JPG'];
+
+        function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1;
+        } else if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+        }
+        const imageContainer = document.querySelector('.image-container img');
+        imageContainer.src = images[currentImageIndex];
         }
     </script>
 </body>
